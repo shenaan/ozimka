@@ -1,0 +1,30 @@
+.dropdown__list{
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 51%;
+  top: 100%;
+  padding-left: 5px;
+  background-color: #f7f7f7;
+  z-index: 10;
+  .transition(0.3s all ease);
+  .border-radius(3px)
+
+}
+
+.dropdown__list-item{
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.dropdown__list-link{
+  color: @darkGrey;
+  display: inline-flex;
+  width: 100%;
+  .transition(0.3s all ease);
+  &:hover,
+  &:focus{
+    text-decoration: none;
+    color: @greenColor;
+  }
+}

@@ -1,0 +1,573 @@
+<!doctype html>
+<html class="no-js" lang="ru-en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Ozimka</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="css/reboot.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="header">
+            <div class="main-container flex">
+                <a href="#" class="header__logo"></a>
+                <nav class="header__nav">
+                    <input type="search" placeholder="Search" class="header__nav-input">
+                    <a href="#" id="header__search" class="header__nav-link"><span class="header__nav-icon icon-search"></span></a>
+                    <a href="#" class="header__nav-link"><span class="header__nav-icon icon-heart"></span></a>
+                    <a href="#" class="header__nav-link">Войти</a>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="filters">
+                <div class="main-container flex">
+                    <ul class="filters__list">
+                        <li class="filters__list-item active"><a href="#" class="filter__list-link">Продажа</a></li>
+                        <li class="filters__list-item"><a href="#" class="filter__list-link">Аренда</a></li>
+                        <li class="filters__list-item"><a href="#" class="filter__list-link">Тип жилья</a></li>
+                        <li class="filters__list-item"><a href="#" class="filter__list-link">Цена</a></li>
+                        <li class="filters__list-item"><a href="#" class="filter__list-link">Еще фильтры</a></li>
+                    </ul>
+
+                    <a href="#" class="filters__add">Разместить бесплатно</a>
+                </div>
+            </div>
+
+            <div class="main-container">
+                <nav class="nav__breadcrump">
+                    <ul class="breadcrump__list">
+                        <li class="breadcrump__list-item"><a href="#" class="breadcrump__list-link">Главная</a>
+                            <span class="breadcrump__list-icon icon-arrow-right2"></span>
+                        </li>
+                        <li class="breadcrump__list-item"><a href="#" class="breadcrump__list-link">Продажа квартир Киев</a>
+                            <span class="breadcrump__list-icon icon-arrow-right2"></span>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="search">
+                    <div class="search-col-1">
+                        <ul class="search-cat__list">
+                            <li class="search-cat__list-item">
+                                <a href="#" class="search-cat__list-link">Жилая</a>
+                                <ul class="search-cat__sublist">
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">Новостройки</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item active">
+                                        <a href="#" class="search-cat__sublist-link">Квартиры</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">Дома</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link"> Коттеджи</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link"> Таунхаусы</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link"> Земельные участки</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="search-cat__list-item">
+                                <a href="#" class="search-cat__list-link">Коммерческая</a>
+                                <ul class="search-cat__sublist">
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link"> Офисы</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link"> Торговые площади,
+                                            магазины</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link"> Гаражи, паркинги</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">Производственные
+                                            помещения</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">Промышленная земля</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">Склады</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">Здания</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link"> Гостиницы</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">Инвестиционные
+                                            проекты</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">Готовые бизнесы</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">ПСН</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">СТО</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">АЗС, нефтебазы</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">Спортклубы</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                    <a href="#" class="search-cat__sublist-link"> Аптеки, клиники</a>
+                                </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">   Салоны красоты</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="search-cat__list-item">
+                                <a href="#" class="search-cat__list-link">Земля</a>
+                                <ul class="search-cat__sublist">
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link"> Земельные участки</a>
+                                    </li>
+                                    <li class="search-cat__sublist-item">
+                                        <a href="#" class="search-cat__sublist-link">Промышленная земля</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="banner_sm">
+                            <a href="#"><img src="img/banner-sm.png" alt="banner img"></a>
+                        </div>
+                    </div>
+                    <div class="search-col-2">
+                        <div class="search-results__menu">
+                            <a href="#" class="save-search"><span class="icon-star-empty"></span>Сохранить поиск</a>
+                            <div class="search-controls">
+                                <div class="search-controls__sort">
+                                    <span>Сортировка: </span>
+                                    <a href="#" id="dropdown__btn-sort" class="search-controls__sort-item dropdown__btn">По дате
+                                        <span class=" search-controls__icon sc__sort-icon icon-triangle-down"></span>
+                                        <span class=" search-controls__icon sc__sort-icon icon-triangle-up"></span>
+                                    </a>
+                                    <ul id="dropdown__list-sort" class="dropdown__list">
+                                        <li class="dropdown__list-item">
+                                            <a href="" class="dropdown__list-link">По цене</a>
+                                        </li>
+                                        <li class="dropdown__list-item">
+                                            <a href="" class="dropdown__list-link">По району</a>
+                                        </li>
+                                        <li class="dropdown__list-item">
+                                            <a href="" class="dropdown__list-link">По метражу</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="search-controls__show">
+                                    <span>Отображать: </span>
+                                    <a href="#" id="dropdown__btn-show" class="search-controls__show-item dropdown__btn">За все время
+                                        <span class="search-controls__icon sc__show-icon icon-triangle-down"></span>
+                                        <span class="search-controls__icon  sc__show-icon icon-triangle-up"></span>
+                                    </a>
+                                    <ul id="dropdown__list-show" class="dropdown__list">
+                                        <li class="dropdown__list-item">
+                                            <a href="" class="dropdown__list-link">Последние</a>
+                                        </li>
+                                        <li class="dropdown__list-item">
+                                            <a href="" class="dropdown__list-link">За месяц</a>
+                                        </li>
+                                        <li class="dropdown__list-item">
+                                            <a href="" class="dropdown__list-link">За неделю</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="search-results">
+                            <div class="search-result__item">
+                                <div class="search-result__img">
+                                    <a  data-fancybox="search-result-img-1" href="img/search-img-1.png"><img src="img/search-img-1.png" alt="Apartment image" title="Ивано-Франковск, Соломенский р-н,"></a>
+                                </div>
+                                <div class="search-result__content">
+                                    <div class="search-result__address-wrapper">
+                                        <div class="sr__address">
+                                            <span class="sr__address-street">Стратегическое шоссе, 4/27</span>
+                                            <span class="sr__address-city">Ивано-Франковск, Соломенский р-н, Караваевы дачи</span>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#"  class="sr__sidebar-heart icon-heart"></a>
+                                            <a  href="#" class="sr__sidebar-dots">
+                                                <span></span><span></span><span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-result__tel">
+                                        <span class="sr__tel-icon icon-phone"></span>
+                                        <span class="sr__tel-number">+38 (044) 555-66-77</span>
+                                    </div>
+                                    <div class="search-result__price">
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">635 000 грн</span>
+                                            <span class="sr__price-usd">249 000$</span>
+                                        </div>
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">10 409 грн/м2</span>
+                                            <span class="sr__price-usd">2 706$/м2</span>
+                                        </div>
+                                    </div>
+                                    <span class="search-results__about">
+                                        3-комнатная, 70 / 47 / 10 м²
+                                    </span>
+                                    <div class="search-result__description-wrapper">
+                                        <div class="sr__description">
+                                            <a href="#">Продам 3-х комнатную квартиру. Голосеевский р-н, Стратегическое шоссе 4/27. Расположена на 1 этаже ... этажного дома (всего 12 квартир). Общая площадь - 70 м2. Жилая площадь - 47 м2. Площадь кухни - 10 м2. Санузел - раздельный. Высота потолка: 2,7м. Отличный ремонт: металлопластиковые окна, кафель, паркет, столярка с натурального дерева, броне двери. Во дворе хороший сад и гараж 3.5 на 6 м. До Голосеевского парка двадцать минут пешком, Лысой горы двадцать минут пешком, Голосеевский лес две остановки транспорта. Рядом, минута ходьбы магазины, аптеки, остановка. До метро Димеевская 15 минут пешком или одна остановка общественного транспорта. Прекрасное место в хорошем доме тихое и прекрасное место.
+                                                ...</a>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#" class="sr__sidebar-number">3</a>
+                                            <a href="#" class="sr__sidebar-arrow icon-arrow-up"></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-result__item">
+                                <div class="search-result__img">
+                                    <a  data-fancybox="search-result-img-2" href="img/search-img-2.png">
+                                        <img src="img/search-img-2.png" alt="Apartment image" title="Ивано-Франковск, Соломенский р-н,">
+                                    </a>
+                                </div>
+                                <div class="search-result__content">
+                                    <div class="search-result__address-wrapper">
+                                        <div class="sr__address">
+                                            <span class="sr__address-street">Стратегическое шоссе, 4/27</span>
+                                            <span class="sr__address-city">Ивано-Франковск, Соломенский р-н, Караваевы дачи</span>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#"  class="sr__sidebar-heart icon-heart"></a>
+                                            <a  href="#" class="sr__sidebar-dots">
+                                                <span></span><span></span><span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-result__tel">
+                                        <span class="sr__tel-icon icon-phone"></span>
+                                        <span class="sr__tel-number">+38 (044) 555-66-77</span>
+                                    </div>
+                                    <div class="search-result__price">
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">635 000 грн</span>
+                                            <span class="sr__price-usd">249 000$</span>
+                                        </div>
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">10 409 грн/м2</span>
+                                            <span class="sr__price-usd">2 706$/м2</span>
+                                        </div>
+                                    </div>
+                                    <span class="search-results__about">
+                                        3-комнатная, 70 / 47 / 10 м²
+                                    </span>
+                                    <div class="search-result__description-wrapper">
+                                        <div class="sr__description">
+                                            <a href="#">Продам 3-х комнатную квартиру. Голосеевский р-н, Стратегическое шоссе 4/27. Расположена на 1 этаже ... этажного дома (всего 12 квартир). Общая площадь - 70 м2. Жилая площадь - 47 м2. Площадь кухни - 10 м2. Санузел - раздельный. Высота потолка: 2,7м. Отличный ремонт: металлопластиковые окна, кафель, паркет, столярка с натурального дерева, броне двери. Во дворе хороший сад и гараж 3.5 на 6 м. До Голосеевского парка двадцать минут пешком, Лысой горы двадцать минут пешком, Голосеевский лес две остановки транспорта. Рядом, минута ходьбы магазины, аптеки, остановка. До метро Димеевская 15 минут пешком или одна остановка общественного транспорта. Прекрасное место в хорошем доме тихое и прекрасное место.
+                                                ...</a>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#" class="sr__sidebar-number">3</a>
+                                            <a href="#" class="sr__sidebar-arrow icon-arrow-up"></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-result__item">
+                                <div class="search-result__img">
+                                    <a  data-fancybox="search-result-img-3" href="img/search-img-3.png">
+                                        <img src="img/search-img-3.png" alt="Apartment image" title="Ивано-Франковск, Соломенский р-н,">
+                                    </a>
+                                </div>
+                                <div class="search-result__content">
+                                    <div class="search-result__address-wrapper">
+                                        <div class="sr__address">
+                                            <span class="sr__address-street">Стратегическое шоссе, 4/27</span>
+                                            <span class="sr__address-city">Ивано-Франковск, Соломенский р-н, Караваевы дачи</span>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#"  class="sr__sidebar-heart icon-heart"></a>
+                                            <a  href="#" class="sr__sidebar-dots">
+                                                <span></span><span></span><span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-result__tel">
+                                        <span class="sr__tel-icon icon-phone"></span>
+                                        <span class="sr__tel-number">+38 (044) 555-66-77</span>
+                                    </div>
+                                    <div class="search-result__price">
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">635 000 грн</span>
+                                            <span class="sr__price-usd">249 000$</span>
+                                        </div>
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">10 409 грн/м2</span>
+                                            <span class="sr__price-usd">2 706$/м2</span>
+                                        </div>
+                                    </div>
+                                    <span class="search-results__about">
+                                        3-комнатная, 70 / 47 / 10 м²
+                                    </span>
+                                    <div class="search-result__description-wrapper">
+                                        <div class="sr__description">
+                                            <a href="#">Продам 3-х комнатную квартиру. Голосеевский р-н, Стратегическое шоссе 4/27. Расположена на 1 этаже ... этажного дома (всего 12 квартир). Общая площадь - 70 м2. Жилая площадь - 47 м2. Площадь кухни - 10 м2. Санузел - раздельный. Высота потолка: 2,7м. Отличный ремонт: металлопластиковые окна, кафель, паркет, столярка с натурального дерева, броне двери. Во дворе хороший сад и гараж 3.5 на 6 м. До Голосеевского парка двадцать минут пешком, Лысой горы двадцать минут пешком, Голосеевский лес две остановки транспорта. Рядом, минута ходьбы магазины, аптеки, остановка. До метро Димеевская 15 минут пешком или одна остановка общественного транспорта. Прекрасное место в хорошем доме тихое и прекрасное место.
+                                                ...</a>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#" class="sr__sidebar-number">3</a>
+                                            <a href="#" class="sr__sidebar-arrow icon-arrow-up"></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-result__item">
+                                <div class="search-result__img">
+                                    <a  data-fancybox="search-result-img-4" href="img/search-img-4.png">
+                                        <img src="img/search-img-4.png" alt="Apartment image" title="Ивано-Франковск, Соломенский р-н,">
+                                    </a>
+                                </div>
+                                <div class="search-result__content">
+                                    <div class="search-result__address-wrapper">
+                                        <div class="sr__address">
+                                            <span class="sr__address-street">Стратегическое шоссе, 4/27</span>
+                                            <span class="sr__address-city">Ивано-Франковск, Соломенский р-н, Караваевы дачи</span>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#"  class="sr__sidebar-heart icon-heart"></a>
+                                            <a  href="#" class="sr__sidebar-dots">
+                                                <span></span><span></span><span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-result__tel">
+                                        <span class="sr__tel-icon icon-phone"></span>
+                                        <span class="sr__tel-number">+38 (044) 555-66-77</span>
+                                    </div>
+                                    <div class="search-result__price">
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">635 000 грн</span>
+                                            <span class="sr__price-usd">249 000$</span>
+                                        </div>
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">10 409 грн/м2</span>
+                                            <span class="sr__price-usd">2 706$/м2</span>
+                                        </div>
+                                    </div>
+                                    <span class="search-results__about">
+                                        3-комнатная, 70 / 47 / 10 м²
+                                    </span>
+                                    <div class="search-result__description-wrapper">
+                                        <div class="sr__description">
+                                            <a href="#">Продам 3-х комнатную квартиру. Голосеевский р-н, Стратегическое шоссе 4/27. Расположена на 1 этаже ... этажного дома (всего 12 квартир). Общая площадь - 70 м2. Жилая площадь - 47 м2. Площадь кухни - 10 м2. Санузел - раздельный. Высота потолка: 2,7м. Отличный ремонт: металлопластиковые окна, кафель, паркет, столярка с натурального дерева, броне двери. Во дворе хороший сад и гараж 3.5 на 6 м. До Голосеевского парка двадцать минут пешком, Лысой горы двадцать минут пешком, Голосеевский лес две остановки транспорта. Рядом, минута ходьбы магазины, аптеки, остановка. До метро Димеевская 15 минут пешком или одна остановка общественного транспорта. Прекрасное место в хорошем доме тихое и прекрасное место.
+                                                ...</a>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#" class="sr__sidebar-number">3</a>
+                                            <a href="#" class="sr__sidebar-arrow icon-arrow-up"></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-result__item">
+                                <div class="search-result__img">
+                                    <a  data-fancybox="search-result-img-5" href="img/search-img-1.png">
+                                        <img src="img/search-img-1.png" alt="Apartment image" title="Ивано-Франковск, Соломенский р-н,">
+                                    </a>
+                                </div>
+                                <div class="search-result__content">
+                                    <div class="search-result__address-wrapper">
+                                        <div class="sr__address">
+                                            <span class="sr__address-street">Стратегическое шоссе, 4/27</span>
+                                            <span class="sr__address-city">Ивано-Франковск, Соломенский р-н, Караваевы дачи</span>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#"  class="sr__sidebar-heart icon-heart"></a>
+                                            <a  href="#" class="sr__sidebar-dots">
+                                                <span></span><span></span><span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-result__tel">
+                                        <span class="sr__tel-icon icon-phone"></span>
+                                        <span class="sr__tel-number">+38 (044) 555-66-77</span>
+                                    </div>
+                                    <div class="search-result__price">
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">635 000 грн</span>
+                                            <span class="sr__price-usd">249 000$</span>
+                                        </div>
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">10 409 грн/м2</span>
+                                            <span class="sr__price-usd">2 706$/м2</span>
+                                        </div>
+                                    </div>
+                                    <span class="search-results__about">
+                                        3-комнатная, 70 / 47 / 10 м²
+                                    </span>
+                                    <div class="search-result__description-wrapper">
+                                        <div class="sr__description">
+                                            <a href="#">Продам 3-х комнатную квартиру. Голосеевский р-н, Стратегическое шоссе 4/27. Расположена на 1 этаже ... этажного дома (всего 12 квартир). Общая площадь - 70 м2. Жилая площадь - 47 м2. Площадь кухни - 10 м2. Санузел - раздельный. Высота потолка: 2,7м. Отличный ремонт: металлопластиковые окна, кафель, паркет, столярка с натурального дерева, броне двери. Во дворе хороший сад и гараж 3.5 на 6 м. До Голосеевского парка двадцать минут пешком, Лысой горы двадцать минут пешком, Голосеевский лес две остановки транспорта. Рядом, минута ходьбы магазины, аптеки, остановка. До метро Димеевская 15 минут пешком или одна остановка общественного транспорта. Прекрасное место в хорошем доме тихое и прекрасное место.
+                                                ...</a>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#" class="sr__sidebar-number">3</a>
+                                            <a href="#" class="sr__sidebar-arrow icon-arrow-up"></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-result__item">
+                                <div class="search-result__img">
+                                    <a  data-fancybox="search-result-img-6" href="img/search-img-2.png">
+                                        <img src="img/search-img-2.png" alt="Apartment image" title="Ивано-Франковск, Соломенский р-н,">
+                                    </a>
+                                </div>
+                                <div class="search-result__content">
+                                    <div class="search-result__address-wrapper">
+                                        <div class="sr__address">
+                                            <span class="sr__address-street">Стратегическое шоссе, 4/27</span>
+                                            <span class="sr__address-city">Ивано-Франковск, Соломенский р-н, Караваевы дачи</span>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#"  class="sr__sidebar-heart icon-heart"></a>
+                                            <a  href="#" class="sr__sidebar-dots">
+                                                <span></span><span></span><span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-result__tel">
+                                        <span class="sr__tel-icon icon-phone"></span>
+                                        <span class="sr__tel-number">+38 (044) 555-66-77</span>
+                                    </div>
+                                    <div class="search-result__price">
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">635 000 грн</span>
+                                            <span class="sr__price-usd">249 000$</span>
+                                        </div>
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">10 409 грн/м2</span>
+                                            <span class="sr__price-usd">2 706$/м2</span>
+                                        </div>
+                                    </div>
+                                    <span class="search-results__about">
+                                        3-комнатная, 70 / 47 / 10 м²
+                                    </span>
+                                    <div class="search-result__description-wrapper">
+                                        <div class="sr__description">
+                                            <a href="#">Продам 3-х комнатную квартиру. Голосеевский р-н, Стратегическое шоссе 4/27. Расположена на 1 этаже ... этажного дома (всего 12 квартир). Общая площадь - 70 м2. Жилая площадь - 47 м2. Площадь кухни - 10 м2. Санузел - раздельный. Высота потолка: 2,7м. Отличный ремонт: металлопластиковые окна, кафель, паркет, столярка с натурального дерева, броне двери. Во дворе хороший сад и гараж 3.5 на 6 м. До Голосеевского парка двадцать минут пешком, Лысой горы двадцать минут пешком, Голосеевский лес две остановки транспорта. Рядом, минута ходьбы магазины, аптеки, остановка. До метро Димеевская 15 минут пешком или одна остановка общественного транспорта. Прекрасное место в хорошем доме тихое и прекрасное место.
+                                                ...</a>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#" class="sr__sidebar-number">3</a>
+                                            <a href="#" class="sr__sidebar-arrow icon-arrow-up"></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="search-result__item">
+                                <div class="search-result__img">
+                                    <a  data-fancybox="search-result-img-7" href="img/search-img-3.png">
+                                        <img src="img/search-img-3.png" alt="Apartment image" title="Ивано-Франковск, Соломенский р-н,">
+                                    </a>
+                                </div>
+                                <div class="search-result__content">
+                                    <div class="search-result__address-wrapper">
+                                        <div class="sr__address">
+                                            <span class="sr__address-street">Стратегическое шоссе, 4/27</span>
+                                            <span class="sr__address-city">Ивано-Франковск, Соломенский р-н, Караваевы дачи</span>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#"  class="sr__sidebar-heart icon-heart"></a>
+                                            <a  href="#" class="sr__sidebar-dots">
+                                                <span></span><span></span><span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-result__tel">
+                                        <span class="sr__tel-icon icon-phone"></span>
+                                        <span class="sr__tel-number">+38 (044) 555-66-77</span>
+                                    </div>
+                                    <div class="search-result__price">
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">635 000 грн</span>
+                                            <span class="sr__price-usd">249 000$</span>
+                                        </div>
+                                        <div class="sr__price-col">
+                                            <span class="sr__price-uah">10 409 грн/м2</span>
+                                            <span class="sr__price-usd">2 706$/м2</span>
+                                        </div>
+                                    </div>
+                                    <span class="search-results__about">
+                                        3-комнатная, 70 / 47 / 10 м²
+                                    </span>
+                                    <div class="search-result__description-wrapper">
+                                        <div class="sr__description">
+                                            <a href="#">Продам 3-х комнатную квартиру. Голосеевский р-н, Стратегическое шоссе 4/27. Расположена на 1 этаже ... этажного дома (всего 12 квартир). Общая площадь - 70 м2. Жилая площадь - 47 м2. Площадь кухни - 10 м2. Санузел - раздельный. Высота потолка: 2,7м. Отличный ремонт: металлопластиковые окна, кафель, паркет, столярка с натурального дерева, броне двери. Во дворе хороший сад и гараж 3.5 на 6 м. До Голосеевского парка двадцать минут пешком, Лысой горы двадцать минут пешком, Голосеевский лес две остановки транспорта. Рядом, минута ходьбы магазины, аптеки, остановка. До метро Димеевская 15 минут пешком или одна остановка общественного транспорта. Прекрасное место в хорошем доме тихое и прекрасное место.
+                                                ...</a>
+                                        </div>
+                                        <div class="sr__sidebar">
+                                            <a href="#" class="sr__sidebar-number">3</a>
+                                            <a href="#" class="sr__sidebar-arrow icon-arrow-up"></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="search-col-3">
+                        <div class="banner_lg">
+                            <a href="#"><img src="img/banner.png" alt="banner img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+      
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/wow.min.js"></script>
+        <script src="js/vendor/jquery.fancybox.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
